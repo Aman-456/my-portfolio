@@ -28,6 +28,7 @@ export default function Navbar() {
                   )}
                 >
                   <item.icon className="size-4" />
+                  <span className="sr-only">{item.label}</span>
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -51,6 +52,7 @@ export default function Navbar() {
                     )}
                   >
                     <social.icon className="size-4" />
+                    <span className="sr-only">{name}</span>
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>

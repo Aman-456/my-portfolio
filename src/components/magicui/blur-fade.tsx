@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
+import { AnimatePresence, m, useInView, Variants, LazyMotion, domAnimation } from "framer-motion";
 import { useRef } from "react";
 
 interface BlurFadeProps {
@@ -37,8 +37,9 @@ const BlurFade = ({
   };
   const combinedVariants = variant || defaultVariants;
   return (
+    <LazyMotion features={domAnimation}>
     <AnimatePresence>
-      <motion.div
+      <m.div
         ref={ref}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -52,8 +53,9 @@ const BlurFade = ({
         className={className}
       >
         {children}
-      </motion.div>
+      </m.div>
     </AnimatePresence>
+    </LazyMotion>
   );
 };
 

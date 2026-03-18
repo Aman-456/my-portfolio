@@ -1,5 +1,30 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, FolderGit2, Search } from "lucide-react";
+
+export const TAGS = {
+	REACT: "React",
+	NEXT: "Next.js",
+	TYPESCRIPT: "TypeScript",
+	JAVASCRIPT: "JavaScript",
+	NODE: "Node.js",
+	EXPRESS: "Express",
+	MONGODB: "MongoDB",
+	TAILWIND: "TailwindCSS",
+	SHADCN: "Shadcn UI",
+	MUI: "MUI",
+	BOOTSTRAP: "Bootstrap",
+	FIREBASE: "Firebase",
+	WEB3: "Web3",
+	FULLSTACK: "Full Stack",
+	MERN: "MERN",
+	ANTD: "AntD",
+	SCSS: "SCSS",
+	FRONTEND: "Frontend",
+	GOOGLE_AUTH: "Google Auth",
+	FRAMER_MOTION: "Framer Motion",
+	CANVAS: "HTML5 Canvas",
+	CSS: "CSS",
+} as const;
 
 export const DATA = {
 	name: "AMAN",
@@ -26,6 +51,7 @@ export const DATA = {
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
+		{ href: "/projects", icon: FolderGit2, label: "Projects" },
 		// { href: "/blog", icon: NotebookIcon, label: "Blog" },
 	],
 	contact: {
@@ -179,13 +205,13 @@ export const DATA = {
 			description:
 				"Comprehensive automotive marketplace platform similar to PakWheels with multi-product capabilities for cars, bikes, and auto parts. Includes admin dashboards, auction systems, inspection features, and encrypted dealer/user route management for secure transactions.",
 			technologies: [
-				"Next.js",
-				"TypeScript",
-				"Node.js",
-				"Express",
-				"MongoDB",
-				"TailwindCSS",
-				"Shadcn UI",
+				TAGS.NEXT,
+				TAGS.TYPESCRIPT,
+				TAGS.NODE,
+				TAGS.EXPRESS,
+				TAGS.MONGODB,
+				TAGS.TAILWIND,
+				TAGS.SHADCN,
 			],
 			links: [
 				{
@@ -205,12 +231,12 @@ export const DATA = {
 			description:
 				"Multi-vendor food marketplace app with vendor dashboards, product listings, order management, and payment integration. Features real-time updates and smooth customer/vendor workflows.",
 			technologies: [
-				"React",
-				"MUI",
-				"Express",
-				"MongoDB",
-				"Node.js",
-				"Full Stack",
+				TAGS.REACT,
+				TAGS.MUI,
+				TAGS.EXPRESS,
+				TAGS.MONGODB,
+				TAGS.NODE,
+				TAGS.FULLSTACK,
 			],
 			links: [
 				{
@@ -230,12 +256,12 @@ export const DATA = {
 			description:
 				"MERN stack company website with an extensive admin dashboard for managing blogs, team profiles, and client-facing content.",
 			technologies: [
-				"React",
-				"MUI",
-				"Bootstrap",
-				"Express",
-				"MongoDB",
-				"Full Stack",
+				TAGS.REACT,
+				TAGS.MUI,
+				TAGS.BOOTSTRAP,
+				TAGS.EXPRESS,
+				TAGS.MONGODB,
+				TAGS.FULLSTACK,
 			],
 			links: [
 				{
@@ -255,11 +281,11 @@ export const DATA = {
 			description:
 				"A gaming platform where users purchase tokens to play WebGL-based games. Integrated payment gateways (JazzCash, EasyPaisa) and built full-stack solution with Next.js.",
 			technologies: [
-				"Next.js",
-				"React",
-				"TailwindCSS",
-				"MongoDB",
-				"Full Stack",
+				TAGS.NEXT,
+				TAGS.REACT,
+				TAGS.TAILWIND,
+				TAGS.MONGODB,
+				TAGS.FULLSTACK,
 			],
 			links: [
 				{
@@ -279,11 +305,11 @@ export const DATA = {
 			description:
 				"Web3 quiz DApp integrating Solana and Ethereum chains. Includes wallet connections, token transactions, and dynamic gameplay features.",
 			technologies: [
-				"Next.js",
-				"TailwindCSS",
-				"Firebase",
-				"Web3",
-				"Full Stack",
+				TAGS.NEXT,
+				TAGS.TAILWIND,
+				TAGS.FIREBASE,
+				TAGS.WEB3,
+				TAGS.FULLSTACK,
 			],
 			links: [
 				{
@@ -302,7 +328,7 @@ export const DATA = {
 			active: true,
 			description:
 				"Sports forum platform with event management, community discussions, and real-time updates. Built with MERN stack and custom UI components.",
-			technologies: ["MERN", "React", "AntD", "Bootstrap", "Full Stack"],
+			technologies: [TAGS.MERN, TAGS.REACT, TAGS.ANTD, TAGS.BOOTSTRAP, TAGS.FULLSTACK],
 			links: [
 				{
 					type: "Website",
@@ -320,7 +346,7 @@ export const DATA = {
 			active: false,
 			description:
 				"Frontend of a crowdfunding platform built using React and AntD with clean UI and project showcase features.",
-			technologies: ["React", "AntD", "SCSS", "Frontend"],
+			technologies: [TAGS.REACT, TAGS.ANTD, TAGS.SCSS, TAGS.FRONTEND],
 			links: [
 				{
 					type: "Website",
@@ -339,11 +365,11 @@ export const DATA = {
 			description:
 				"A comprehensive blog platform with role-based access control. Admins have full CRUD capabilities for blogs and can manage sub-admins. Sub-admins can manage their own content, while normal users can view and comment on posts. Features an integrated comment management system. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
 			technologies: [
-				"Next Js",
-				"Mongodb",
-				"Google Auth",
-				"TailwindCSS",
-				"Full Stack",
+				TAGS.NEXT,
+				TAGS.MONGODB,
+				TAGS.GOOGLE_AUTH,
+				TAGS.TAILWIND,
+				TAGS.FULLSTACK,
 			],
 			links: [
 				{
@@ -363,7 +389,7 @@ export const DATA = {
 			active: false,
 			description:
 				"Project management software for internal use. Includes task tracking, milestones, and multi-role access.",
-			technologies: ["React", "MUI", "Express", "MongoDB", "Full Stack"],
+			technologies: [TAGS.REACT, TAGS.MUI, TAGS.EXPRESS, TAGS.MONGODB, TAGS.FULLSTACK],
 			image: "/projects/directportal.png",
 			video: "",
 			links: [],
@@ -375,7 +401,7 @@ export const DATA = {
 			active: true,
 			description:
 				"A Game Developer's Portfolio website with smooth animations and interactive elements. Built with React and Framer Motion.",
-			technologies: ["React", "Framer Motion"],
+			technologies: [TAGS.REACT, TAGS.FRAMER_MOTION],
 			links: [
 				{
 					type: "Website",
@@ -394,10 +420,9 @@ export const DATA = {
 			description:
 				"2D JavaScript game prototype / tech test featuring sprite-based characters, enemies, projectiles, and environmental elements. Built as a practice project to explore core game development concepts like asset loading, rendering, animations, and basic interactions using vanilla JavaScript.",
 			technologies: [
-				"JavaScript",
-				"HTML5 Canvas",
-				"CSS",
-				"Netlify", // Hosting/deployment
+				TAGS.JAVASCRIPT,
+				TAGS.CANVAS,
+				TAGS.CSS,
 			],
 			links: [
 				{
@@ -416,7 +441,7 @@ export const DATA = {
 			active: true,
 			description:
 				"Modern landing page for Hilink, a mobile adventure travel app designed for hikers, campers, and nature enthusiasts. ",
-			technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+			technologies: [TAGS.NEXT, TAGS.TYPESCRIPT, TAGS.TAILWIND],
 			links: [
 				{
 					type: "Website",

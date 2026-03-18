@@ -14,7 +14,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
 	return (
-		<main className="flex flex-col min-h-[100dvh] space-y-10 max-w-3xl mx-auto">
+		<main className="flex flex-col min-h-[100dvh] space-y-10 max-w-[715px] mx-auto">
 			<section id="hero">
 				<div className="mx-auto w-full space-y-8">
 					<div className="gap-2 flex justify-between">
@@ -37,7 +37,14 @@ export default function Page() {
 						</div>
 						<BlurFade delay={BLUR_FADE_DELAY}>
 							<Avatar className="size-28 border relative overflow-hidden">
-								<Image alt={DATA.name} src={DATA.avatarUrl} fill className="object-cover" priority sizes="(max-width: 768px) 112px, 112px" />
+								<Image
+									alt={DATA.name}
+									src={DATA.avatarUrl}
+									fill
+									className="object-cover"
+									priority
+									sizes="(max-width: 768px) 112px, 112px"
+								/>
 								<AvatarFallback>{DATA.initials}</AvatarFallback>
 							</Avatar>
 						</BlurFade>
@@ -210,12 +217,9 @@ export default function Page() {
 				</div>
 			</section>
 			<section id="contact" className="">
-				<div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+				<div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-ful pt-5 pb-12">
 					<BlurFade delay={BLUR_FADE_DELAY * 16}>
 						<div className="space-y-3">
-							<div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-								Contact
-							</div>
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
 								Get in Touch
 							</h2>

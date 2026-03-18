@@ -41,13 +41,18 @@ export const DATA = {
 	skills: [
 		"React",
 		"Next.js",
-		"Javaccript",
+		"Javascript",
 		"Typescript",
 		"Tailwind",
+		"Shadcn UI",
 		"Mui",
 		"Node.js",
 		"Express",
+		"MongoDB",
 		"Firebase",
+		"Socket.io",
+		"Git",
+		"Github Actions",
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
@@ -203,7 +208,7 @@ export const DATA = {
 			dates: "Dec 2024 - Present",
 			active: true,
 			description:
-				"Comprehensive automotive marketplace platform similar to PakWheels with multi-product capabilities for cars, bikes, and auto parts. Includes admin dashboards, auction systems, inspection features, and encrypted dealer/user route management for secure transactions.",
+				"Automotive marketplace platform like PakWheels for cars, bikes, and auto parts, featuring admin dashboards, auctions, inspections, and secure, encrypted user and dealer management.",
 			technologies: [
 				TAGS.NEXT,
 				TAGS.TYPESCRIPT,
@@ -328,7 +333,13 @@ export const DATA = {
 			active: true,
 			description:
 				"Sports forum platform with event management, community discussions, and real-time updates. Built with MERN stack and custom UI components.",
-			technologies: [TAGS.MERN, TAGS.REACT, TAGS.ANTD, TAGS.BOOTSTRAP, TAGS.FULLSTACK],
+			technologies: [
+				TAGS.MERN,
+				TAGS.REACT,
+				TAGS.ANTD,
+				TAGS.BOOTSTRAP,
+				TAGS.FULLSTACK,
+			],
 			links: [
 				{
 					type: "Website",
@@ -363,7 +374,7 @@ export const DATA = {
 			dates: "2025",
 			active: true,
 			description:
-				"A comprehensive blog platform with role-based access control. Admins have full CRUD capabilities for blogs and can manage sub-admins. Sub-admins can manage their own content, while normal users can view and comment on posts. Features an integrated comment management system. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
+				"Blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
 			technologies: [
 				TAGS.NEXT,
 				TAGS.MONGODB,
@@ -389,7 +400,13 @@ export const DATA = {
 			active: false,
 			description:
 				"Project management software for internal use. Includes task tracking, milestones, and multi-role access.",
-			technologies: [TAGS.REACT, TAGS.MUI, TAGS.EXPRESS, TAGS.MONGODB, TAGS.FULLSTACK],
+			technologies: [
+				TAGS.REACT,
+				TAGS.MUI,
+				TAGS.EXPRESS,
+				TAGS.MONGODB,
+				TAGS.FULLSTACK,
+			],
 			image: "/projects/directportal.png",
 			video: "",
 			links: [],
@@ -418,12 +435,8 @@ export const DATA = {
 			dates: "2023",
 			active: true,
 			description:
-				"2D JavaScript game prototype / tech test featuring sprite-based characters, enemies, projectiles, and environmental elements. Built as a practice project to explore core game development concepts like asset loading, rendering, animations, and basic interactions using vanilla JavaScript.",
-			technologies: [
-				TAGS.JAVASCRIPT,
-				TAGS.CANVAS,
-				TAGS.CSS,
-			],
+				"2D JavaScript game prototype with sprites, enemies, projectiles, and interactive environments, built to explore core game development concepts using vanilla JavaScript.",
+			technologies: [TAGS.JAVASCRIPT, TAGS.CANVAS, TAGS.CSS],
 			links: [
 				{
 					type: "Website",

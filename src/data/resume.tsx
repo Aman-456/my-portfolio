@@ -279,29 +279,30 @@ export const DATA = {
 			video: "",
 		},
 		{
-			title: "Cricmoney",
-			href: "https://www.crickmoney.com/",
-			dates: "Jul 2024 - Dec 2024",
+			title: "The Daily Thoughts",
+			href: "https://the-daily-thoughts.vercel.app",
+			dates: "2025",
 			active: true,
 			description:
-				"A gaming platform where users purchase tokens to play WebGL-based games. Integrated payment gateways (JazzCash, EasyPaisa) and built full-stack solution with Next.js.",
+				"Blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
 			technologies: [
 				TAGS.NEXT,
-				TAGS.REACT,
-				TAGS.TAILWIND,
 				TAGS.MONGODB,
+				TAGS.GOOGLE_AUTH,
+				TAGS.TAILWIND,
 				TAGS.FULLSTACK,
 			],
 			links: [
 				{
 					type: "Website",
-					href: "https://www.crickmoney.com/",
+					href: "https://the-daily-thoughts.vercel.app",
 					icon: <Icons.globe className="size-3" />,
 				},
 			],
-			image: "/projects/crickmoney.png",
+			image: "/projects/dailythoughts.png",
 			video: "",
 		},
+
 		{
 			title: "Mystery Madness",
 			href: "https://mysterymadness.co/",
@@ -368,30 +369,6 @@ export const DATA = {
 			image: "/projects/crofundsme.png",
 			video: "",
 		},
-		{
-			title: "The Daily Thoughts",
-			href: "https://the-daily-thoughts.vercel.app",
-			dates: "2025",
-			active: true,
-			description:
-				"Blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
-			technologies: [
-				TAGS.NEXT,
-				TAGS.MONGODB,
-				TAGS.GOOGLE_AUTH,
-				TAGS.TAILWIND,
-				TAGS.FULLSTACK,
-			],
-			links: [
-				{
-					type: "Website",
-					href: "https://the-daily-thoughts.vercel.app",
-					icon: <Icons.globe className="size-3" />,
-				},
-			],
-			image: "/projects/dailythoughts.png",
-			video: "",
-		},
 
 		{
 			title: "Direct Portal",
@@ -427,6 +404,30 @@ export const DATA = {
 				},
 			],
 			image: "/projects/gamify.png",
+			video: "",
+		},
+		{
+			title: "Cricmoney",
+			href: "https://www.crickmoney.com/",
+			dates: "Jul 2024 - Dec 2024",
+			active: true,
+			description:
+				"A gaming platform where users purchase tokens to play WebGL-based games. Integrated payment gateways (JazzCash, EasyPaisa) and built full-stack solution with Next.js.",
+			technologies: [
+				TAGS.NEXT,
+				TAGS.REACT,
+				TAGS.TAILWIND,
+				TAGS.MONGODB,
+				TAGS.FULLSTACK,
+			],
+			links: [
+				{
+					type: "Website",
+					href: "https://www.crickmoney.com/",
+					icon: <Icons.globe className="size-3" />,
+				},
+			],
+			image: "/projects/crickmoney.png",
 			video: "",
 		},
 		{

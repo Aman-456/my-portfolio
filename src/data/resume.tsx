@@ -389,7 +389,7 @@ export const DATA = {
 		{
 			title: "JS Game",
 			href: "https://jsgametest.netlify.app/",
-			// dates: "202X - Present", // Adjust based on your actual timeline
+			dates: "2023",
 			active: true,
 			description:
 				"2D JavaScript game prototype / tech test featuring sprite-based characters, enemies, projectiles, and environmental elements. Built as a practice project to explore core game development concepts like asset loading, rendering, animations, and basic interactions using vanilla JavaScript.",
@@ -412,6 +412,7 @@ export const DATA = {
 		{
 			title: "Hilink Travel App",
 			href: "https://travelapp-alpha.vercel.app/",
+			dates: "",
 			active: true,
 			description:
 				"Modern landing page for Hilink, a mobile adventure travel app designed for hikers, campers, and nature enthusiasts. ",

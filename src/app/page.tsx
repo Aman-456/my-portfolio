@@ -31,7 +31,7 @@ export default function Page() {
 								<BlurFadeText
 									className="max-w-[600px] md:text-xl"
 									delay={BLUR_FADE_DELAY}
-									text={DATA.description}
+									text={DATA.tagline}
 								/>
 							</h2>
 						</div>

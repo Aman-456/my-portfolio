@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 		template: `%s | ${DATA.name}`,
 	},
 
-	description: DATA.description,
+	description: DATA.metaDescription,
 	openGraph: {
 		title: `${title}`,
-		description: DATA.description,
+		description: DATA.metaDescription,
 		url: DATA.url,
 		siteName: `${title}`,
 		locale: "en_US",

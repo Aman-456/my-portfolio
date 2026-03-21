@@ -32,8 +32,9 @@ export const DATA = {
 	url: "https://amanullah.netlify.app",
 	location: "Islamabad, Pakistan",
 	locationLink: "https://www.google.com/maps/place/Pakistan",
-	description:
-		"Full-stack developer with 3+ years building fast, scalable web apps using React, Next.js, and TypeScript, focused on performance and seamless UX.",
+	tagline:
+		"Full-Stack Developer crafting high-performance React & Next.js apps with seamless UX.",
+	metaDescription: "Full-stack developer with 3+ years building fast, scalable web apps using React, Next.js, and TypeScript, focused on performance and seamless UX.",
 	summary:
 		"I have a [background](/#education) in computer science and over 3+ years of experience building web applications with React, Next.js, and TypeScript. I contributed to [CarAdvisers](https://www.caradvisers.com/) by optimizing its core architecture and admin panel for better performance and maintainability. I’ve worked on [projects](/#projects) in marketplaces, agency platforms, and Web3 integrations (Ethereum, Polygon, Solana) using wallets like WalletConnect and Phantom. My [experience](/#work) also includes Node.js, Express, and Firebase for real-time backend services. I plan to explore AI and LLM integrations in Next.js for future projects.",
 	avatarUrl: "/me.jpg",

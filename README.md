@@ -15,13 +15,13 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/amanullah-44/portfolio
+   git clone https://github.com/Aman-456/my-portfolio
    ```
 
 2. Move to the cloned directory
 
    ```bash
-   cd portfolio
+   cd my-portfolio
    ```
 
 3. Install dependencies:

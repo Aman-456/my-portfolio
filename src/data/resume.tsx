@@ -9,6 +9,8 @@ export const TAGS = {
 	NODE: "Node.js",
 	EXPRESS: "Express",
 	MONGODB: "MongoDB",
+	NEON: "Neon Database",
+	DRIZZLE: "Drizzle ORM",
 	TAILWIND: "TailwindCSS",
 	SHADCN: "Shadcn UI",
 	MUI: "MUI",
@@ -285,10 +287,11 @@ export const DATA = {
 			dates: "2025",
 			active: true,
 			description:
-				"Blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, MongoDB, Google Auth, and TailwindCSS.",
+				"A blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, Neon Database, Drizzle ORM, Google Auth, and TailwindCSS.",
 			technologies: [
 				TAGS.NEXT,
-				TAGS.MONGODB,
+				TAGS.NEON,
+				TAGS.DRIZZLE,
 				TAGS.GOOGLE_AUTH,
 				TAGS.TAILWIND,
 				TAGS.FULLSTACK,

@@ -32,7 +32,7 @@ export const TAGS = {
 } as const;
 
 export const DATA = {
-	name: "AMAN",
+	name: "Aman",
 	initials: "AM",
 	url: "https://amanullah.netlify.app",
 	location: "Islamabad, Pakistan",
@@ -41,7 +41,7 @@ export const DATA = {
 		"Full-Stack Developer crafting high-performance React & Next.js apps with seamless UX.",
 	metaDescription: "Full-stack developer with 3+ years building fast, scalable web apps using React, Next.js, and TypeScript, focused on performance and seamless UX.",
 	summary:
-		"I have a [background](/#education) in computer science and over 3+ years of experience building web applications with React, Next.js, and TypeScript. I contributed to [CarAdvisers](https://www.caradvisers.com/) by optimizing its core architecture and admin panel for better performance and maintainability. I’ve worked on [projects](/#projects) in marketplaces, agency platforms, and Web3 integrations (Ethereum, Polygon, Solana) using wallets like WalletConnect and Phantom. My [experience](/#work) also includes Node.js, Express, and Firebase for real-time backend services. I plan to explore AI and LLM integrations in Next.js for future projects.",
+		"I'm a full-stack developer with a [background](/#education) in computer science and 3+ years building web applications with React, Next.js, NestJS, and TypeScript. I'm currently building [AllCoin](https://allcoin.braav.co/), a challenge-coin community platform for collectors (forums, collections, and discovery), and delivering full-stack work at Brimer Ventures across both MERN and PostgreSQL-based stacks. Previously I helped scale [CarAdvisers](https://www.caradvisers.com/), an automotive marketplace, by optimizing its core architecture and admin panel. My [experience](/#work) also spans Node.js, Express, real-time services, and Web3 integrations (Ethereum, Polygon, Solana), and I'm increasingly focused on AI and LLM features in Next.js. Explore my [projects](/#projects) below.",
 	avatarUrl: "/me.jpg",
 
 	skills: [
@@ -212,7 +212,7 @@ export const DATA = {
 		},
 		{
 			school: "ICB",
-			href: "https://uwaterloo.ca",
+			href: "",
 			degree: "Pre-Engineering",
 			logoUrl: "/education/HEC.gif",
 			start: "2016",
@@ -221,7 +221,7 @@ export const DATA = {
 	],
 	projects: [
 		{
-			title: "Braav",
+			title: "AllCoin",
 			href: "https://allcoin.braav.co/",
 			dates: "2025 - Present",
 			active: true,
@@ -321,17 +321,17 @@ export const DATA = {
 			video: "",
 		},
 		{
-			title: "The Daily Thoughts",
+			title: "The Daily Canvas",
 			href: "https://the-daily-thoughts.vercel.app",
 			dates: "2025",
 			active: true,
 			description:
-				"A blog platform with role-based access: admins manage all content, sub-admins manage their posts, users can view/comment. Built with Next.js, Neon Database, Drizzle ORM, Google Auth, and TailwindCSS.",
+				"A full-stack blog and lightweight CMS with role- and permission-based access control, comment threads with voting, a moderation queue, newsletter signup, and first-class SEO (sitemap, RSS, JSON-LD). Built on Next.js (App Router) with React Server Components, Drizzle ORM, Neon Postgres, and NextAuth.",
 			technologies: [
 				TAGS.NEXT,
-				TAGS.NEON,
+				TAGS.TYPESCRIPT,
 				TAGS.DRIZZLE,
-				TAGS.GOOGLE_AUTH,
+				TAGS.NEON,
 				TAGS.TAILWIND,
 				TAGS.FULLSTACK,
 			],
@@ -340,6 +340,11 @@ export const DATA = {
 					type: "Website",
 					href: "https://the-daily-thoughts.vercel.app",
 					icon: <Icons.globe className="size-3" />,
+				},
+				{
+					type: "Source",
+					href: "https://github.com/Aman-456/The-Daily-Canvas",
+					icon: <Icons.github className="size-3" />,
 				},
 			],
 			image: "/projects/dailythoughts.png",

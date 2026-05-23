@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { caseStudySlugForProject } from "@/data/case-studies";
 
 interface Props {
 	title: string;
@@ -36,6 +37,7 @@ export function ProjectCard({
 	links,
 	className,
 }: Props) {
+	const caseStudy = caseStudySlugForProject(title);
 	return (
 		<Card
 			className={
@@ -80,7 +82,15 @@ export function ProjectCard({
 					</div>
 				)}
 			</CardContent>
-			<CardFooter className="px-3 pb-3">
+			<CardFooter className="flex flex-col items-start gap-2 px-3 pb-3">
+				{caseStudy && (
+					<Link
+						href={`/projects/${caseStudy}`}
+						className="inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
+					>
+						Read case study →
+					</Link>
+				)}
 				{links && links.length > 0 && (
 					<div className="flex flex-row flex-wrap items-start gap-1">
 						{links?.map((link, idx) => (

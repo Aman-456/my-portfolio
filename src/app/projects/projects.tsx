@@ -7,6 +7,7 @@ import { DATA } from "@/data/resume";
 import { Badge } from "@/components/ui/badge";
 
 const BLUR_FADE_DELAY = 0.04;
+const PRACTICE_TITLES = new Set(["Hilink Travel App"]);
 
 export default function ProjectsClient() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -37,6 +38,13 @@ export default function ProjectsClient() {
             return matchesQuery && matchesTags;
         });
     }, [searchQuery, selectedTags]);
+
+    const mainProjects = filteredProjects.filter(
+        (p) => !PRACTICE_TITLES.has(p.title),
+    );
+    const practiceProjects = filteredProjects.filter((p) =>
+        PRACTICE_TITLES.has(p.title),
+    );
 
     const toggleTag = (tag: string) => {
         setSelectedTags((prev) =>
@@ -103,31 +111,66 @@ export default function ProjectsClient() {
                 </div>
             </BlurFade>
 
-            <div className="mt-12">
+            <div className="mt-12 space-y-16">
                 {filteredProjects.length === 0 ? (
                     <p className="text-center text-muted-foreground mt-8">
                         No projects found matching your criteria.
                     </p>
                 ) : (
-                    <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
-                        {filteredProjects.map((project, id) => (
-                            <BlurFade
-                                key={project.title}
-                                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-                            >
-                                <ProjectCard
-                                    href={project.href}
-                                    key={project.title}
-                                    title={project.title}
-                                    description={project.description}
-                                    dates={project.dates}
-                                    tags={project.technologies}
-                                    image={project.image}
-                                    links={project.links}
-                                />
-                            </BlurFade>
-                        ))}
-                    </div>
+                    <>
+                        {mainProjects.length > 0 && (
+                            <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
+                                {mainProjects.map((project, id) => (
+                                    <BlurFade
+                                        key={project.title}
+                                        delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                                    >
+                                        <ProjectCard
+                                            href={project.href}
+                                            title={project.title}
+                                            description={project.description}
+                                            dates={project.dates}
+                                            tags={project.technologies}
+                                            image={project.image}
+                                            links={project.links}
+                                        />
+                                    </BlurFade>
+                                ))}
+                            </div>
+                        )}
+
+                        {practiceProjects.length > 0 && (
+                            <div className="space-y-6">
+                                <div className="text-center space-y-1">
+                                    <h3 className="text-xl font-bold tracking-tight">
+                                        Practice &amp; Learning
+                                    </h3>
+                                    <p className="text-sm text-muted-foreground">
+                                        Small builds and experiments from while I was
+                                        learning.
+                                    </p>
+                                </div>
+                                <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
+                                    {practiceProjects.map((project, id) => (
+                                        <BlurFade
+                                            key={project.title}
+                                            delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                                        >
+                                            <ProjectCard
+                                                href={project.href}
+                                                title={project.title}
+                                                description={project.description}
+                                                dates={project.dates}
+                                                tags={project.technologies}
+                                                image={project.image}
+                                                links={project.links}
+                                            />
+                                        </BlurFade>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </>
                 )}
             </div>
         </>

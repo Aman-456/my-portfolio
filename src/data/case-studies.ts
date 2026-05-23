@@ -306,6 +306,14 @@ export const CASE_STUDIES: CaseStudy[] = [
 				],
 			},
 			{
+				heading: "Challenges & trade-offs",
+				bullets: [
+					"Serving two very different audiences from one system — vendors managing catalogs and orders, and customers browsing and ordering.",
+					"Keeping order state in sync in real time so both sides see updates immediately.",
+					"Handling order management and payments cleanly across multiple independent vendors.",
+				],
+			},
+			{
 				heading: "Outcome",
 				paragraphs: [
 					"A working multi-vendor marketplace with end-to-end ordering, vendor management, and live order updates.",
@@ -362,6 +370,89 @@ export const CASE_STUDIES: CaseStudy[] = [
 				heading: "Outcome",
 				paragraphs: [
 					"A deployed, content-managed company site delivered solo — covering both the public experience and the team's admin tooling.",
+				],
+			},
+		],
+	},
+	{
+		slug: "intraverse",
+		projectTitle: "Intraverse",
+		title: "Intraverse — Web3 quest & gaming platform (early build)",
+		tagline:
+			"The earlier version of Intraverse I built solo — a tournament-based, multichain Web3 gaming platform with monthly tournaments, quests, a live leaderboard, a points-multiplier 'Galaxy Pass', wallet connect, and an admin dashboard. It was outsourced to me as my first solo client project; the company has since rebuilt the product, so this reflects my original work.",
+		dates: "2023",
+		image: "/projects/intraverse.png",
+		stack: [
+			"React (CRA)",
+			"Firebase",
+			"Web3 / multichain wallets",
+			"react-unity-webgl",
+			"Cloud storage (bucket)",
+			"Custom CSS & animations",
+		],
+		links: [
+			{
+				label: "Live demo (my version)",
+				href: "https://development-env.netlify.app/",
+			},
+		],
+		sections: [
+			{
+				heading: "Overview",
+				paragraphs: [
+					"Intraverse is a tournament-based Web3 gaming platform — a new tournament ran every month. This case study covers the earlier version I built solo; the company has since rebuilt the product on a new UI and stack, so what's here reflects my original work.",
+				],
+			},
+			{
+				heading: "How it landed on my desk",
+				paragraphs: [
+					"It reached me as just a leaderboard — essentially the first screen you see — and the owner shared very little detail. I was brought in (outsourced) as an 'experienced dev,' even though this was actually my first solo project.",
+					"I assumed it was a one-time job I'd hand back after the first few tournaments. Instead I stayed on and kept shipping — and the previous developer had left the codebase a complete mess, so I reworked it from scratch.",
+				],
+			},
+			{
+				heading: "What I built",
+				bullets: [
+					"Quests and quest-detail flows, a live leaderboard, and a separate referral board.",
+					"A 'Galaxy Pass' system with tiered score multipliers (Nebula ×2 up to Black Hole ×5).",
+					"Multichain Web3 wallet connect, plus login, signup, and play-as-guest entry.",
+					"An admin dashboard.",
+					"A monthly cadence: every month I shipped a new feature and reworked existing ones for that month's tournament — on a tight window, with near-daily updates.",
+				],
+			},
+			{
+				heading: "The performance win I'm proudest of",
+				paragraphs: [
+					"The inherited setup bundled the Unity game build inside the project and loaded it with react-unity-webgl, served off Hostinger's bandwidth — so game load times ran into minutes.",
+					"I moved the game build out to a cloud storage bucket, and load time dropped from minutes to seconds. It was my first time doing this, so I was learning the approach while shipping it.",
+				],
+			},
+			{
+				heading: "Working through Firebase",
+				paragraphs: [
+					"At that point most logic lived client-side — the admin dashboard had only a handful of functions — so I worked largely through the Firebase client SDK, and built composite indexes to support the compound queries the leaderboards and tournaments needed.",
+				],
+			},
+			{
+				heading: "Hand-built UI",
+				paragraphs: [
+					"Built when AI coding tools were still weak, so the UI craft was entirely hands-on.",
+				],
+				bullets: [
+					"Coded the animated starfield background from scratch — no template or library.",
+					"Hand-built the neon card UI and styling manually.",
+				],
+			},
+			{
+				heading: "Wearing every hat",
+				paragraphs: [
+					"Because the engagement was never clearly scoped or communicated up front, I ended up juggling everything solo: client management, project management, deployment, and both the Firebase data layer and the frontend — all against a recurring monthly tournament deadline.",
+				],
+			},
+			{
+				heading: "Outcome",
+				paragraphs: [
+					"I kept the monthly-tournament platform shipping solo across many months. The company later rebuilt the product — but the wins here, like taking game loading from minutes to seconds, the Firebase indexing, and the hand-built neon UI, were my work.",
 				],
 			},
 		],

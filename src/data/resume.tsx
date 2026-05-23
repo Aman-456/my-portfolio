@@ -352,6 +352,30 @@ export const DATA = {
 		},
 
 		{
+			title: "Intraverse",
+			href: "https://development-env.netlify.app/",
+			dates: "2023",
+			active: false,
+			description:
+				"An earlier version I built solo of Intraverse, a Web3 quest/gaming platform — quests, a live leaderboard, a points-multiplier Galaxy Pass, wallet connect, and an admin dashboard, with a hand-coded animated starfield and neon UI. (Since rebuilt by the company.)",
+			technologies: [
+				TAGS.REACT,
+				TAGS.WEB3,
+				TAGS.JAVASCRIPT,
+				TAGS.CSS,
+				TAGS.FRONTEND,
+			],
+			links: [
+				{
+					type: "Website",
+					href: "https://development-env.netlify.app/",
+					icon: <Icons.globe className="size-3" />,
+				},
+			],
+			image: "/projects/intraverse.png",
+			video: "",
+		},
+		{
 			title: "Mystery Madness",
 			href: "https://mysterymadness.co/",
 			dates: "2023",
@@ -381,7 +405,7 @@ export const DATA = {
 			dates: "2023",
 			active: true,
 			description:
-				"Sports forum platform with event management, community discussions, and real-time updates. Built with MERN stack and custom UI components.",
+				"A sports forum and events platform I contributed to — I picked up an existing (legacy) MERN codebase and built and extended features within it, working alongside the team that owned the product.",
 			technologies: [
 				TAGS.MERN,
 				TAGS.REACT,
@@ -405,11 +429,11 @@ export const DATA = {
 			dates: "2023",
 			active: false,
 			description:
-				"Frontend of a crowdfunding platform built using React and AntD with clean UI and project showcase features.",
+				"Frontend/design build of a crowdfunding platform — I was the frontend developer. Clean React + AntD UI with project-showcase pages; the live link is the earlier design, before API integration.",
 			technologies: [TAGS.REACT, TAGS.ANTD, TAGS.SCSS, TAGS.FRONTEND],
 			links: [
 				{
-					type: "Website",
+					type: "Design demo",
 					href: "https://crofundsme.netlify.app/",
 					icon: <Icons.globe className="size-3" />,
 				},
@@ -424,7 +448,7 @@ export const DATA = {
 			dates: "2023",
 			active: false,
 			description:
-				"Project management software for internal use. Includes task tracking, milestones, and multi-role access.",
+				"**Internal — not publicly accessible.** Project management software with task tracking, milestones, and multi-role access.",
 			technologies: [
 				TAGS.REACT,
 				TAGS.MUI,

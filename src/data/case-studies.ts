@@ -457,6 +457,73 @@ export const CASE_STUDIES: CaseStudy[] = [
 			},
 		],
 	},
+	{
+		slug: "allcoin",
+		projectTitle: "AllCoin",
+		title: "AllCoin — Web3 challenge-coin platform (ongoing)",
+		tagline:
+			"Building AllCoin solo for a client — a Web3 challenge-coin community and marketplace platform. I inherited a working but tangled codebase and have been hardening its authorization and architecture while shipping new features. Active project.",
+		dates: "2026 – Present",
+		image: "/projects/braav.png",
+		stack: [
+			"Next.js (App Router)",
+			"NestJS",
+			"TypeScript",
+			"PostgreSQL",
+			"AWS",
+			"TanStack Query",
+			"Cursor (AI-assisted)",
+		],
+		links: [{ label: "Live site", href: "https://allcoin.braav.co/" }],
+		sections: [
+			{
+				heading: "Overview",
+				paragraphs: [
+					"AllCoin is a Web3 challenge-coin community and marketplace platform I'm building solo for a client. I work feature by feature: the client brings what they want, I come back with proposals and ideas, and we agree on the approach together.",
+					"The product already worked when I joined — but the codebase was tangled and spaghetti-like, so a lot of my work is hardening it while continuing to ship.",
+				],
+			},
+			{
+				heading: "Hardening authorization",
+				paragraphs: [
+					"Admin access was being decided on the client side, and the admin allow-list was duplicated across the client and the server and re-initialized ad hoc across many pages — so changing who counted as an admin meant edits in lots of places, and the checks weren't trustworthy.",
+					"I centralized authorization into a single source of truth, fixed the related hooks, and made admin checks consistent across the app instead of being re-written page by page.",
+				],
+			},
+			{
+				heading: "Routing & layout refactor",
+				paragraphs: [
+					"Protected and public routes weren't using the framework's route groups or shared layouts — every protected page re-wrote the same access conditions.",
+					"I introduced route groups and a shared layout so the access check lives in one place, instead of being duplicated on each page.",
+				],
+			},
+			{
+				heading: "Unifying a fragmented auth state",
+				paragraphs: [
+					"Login state was spread across several signals — tokens and IDs in local storage, a flag the middleware relied on, and TanStack Query's stale-while-revalidate cache. When any of those fell out of sync, the app behaved inconsistently: the navbar could show 'logged out' while protected routes were still reachable because the query cache was still hydrating.",
+					"I'm consolidating this into a single layout/provider that resolves auth from the local flags first and then loads the app — removing the flicker and the mismatched states. (Still in progress.)",
+				],
+			},
+			{
+				heading: "Shipping new features",
+				paragraphs: [
+					"Alongside the refactors I've shipped new features — including a marketplace — using an AI-assisted workflow (Cursor) backed by testing and automation. Several are live, with more in a structured backlog.",
+				],
+			},
+			{
+				heading: "Bringing in process",
+				paragraphs: [
+					"There was no real tracking system. The client first wanted everything in a spreadsheet, which quickly became painful, so I moved us to Notion — a proper backlog and catalog for features and progress.",
+				],
+			},
+			{
+				heading: "Status",
+				paragraphs: [
+					"Active and ongoing: incrementally untangling and hardening an inherited codebase while shipping new product features, on a Next.js + NestJS + PostgreSQL + AWS stack across staging and development environments.",
+				],
+			},
+		],
+	},
 ];
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {

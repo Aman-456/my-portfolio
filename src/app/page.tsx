@@ -33,6 +33,16 @@ export default function Page() {
 									text={DATA.tagline}
 								/>
 							</h2>
+							<BlurFade delay={BLUR_FADE_DELAY * 2}>
+								<a
+									href={DATA.resumeUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-flex h-9 w-fit items-center justify-center rounded-md border px-4 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+								>
+									Resume ↗
+								</a>
+							</BlurFade>
 						</div>
 						<BlurFade delay={BLUR_FADE_DELAY}>
 							<Avatar className="size-28 border relative overflow-hidden">

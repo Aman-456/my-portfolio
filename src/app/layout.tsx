@@ -29,7 +29,6 @@ export const metadata: Metadata = {
 		siteName: `${title}`,
 		locale: "en_US",
 		type: "website",
-		images: DATA.avatarUrl,
 	},
 	robots: {
 		index: true,

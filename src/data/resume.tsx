@@ -39,26 +39,33 @@ export const DATA = {
 	locationLink: "https://www.google.com/maps/place/Pakistan",
 	tagline:
 		"Full-Stack Developer crafting high-performance React & Next.js apps with seamless UX.",
-	metaDescription: "Full-stack developer with 3+ years building fast, scalable web apps using React, Next.js, and TypeScript, focused on performance and seamless UX.",
+	metaDescription: "Full-stack developer with 4+ years building fast, scalable web apps using React, Next.js, and TypeScript, focused on performance and seamless UX.",
 	summary:
-		"I'm a full-stack developer with a [background](/#education) in computer science and 3+ years building web applications with React, Next.js, NestJS, and TypeScript. I'm currently building [AllCoin](https://allcoin.braav.co/), a challenge-coin community platform for collectors (forums, collections, and discovery), and delivering full-stack work at Brimer Ventures across both MERN and PostgreSQL-based stacks. Previously I helped scale [CarAdvisers](https://www.caradvisers.com/), an automotive marketplace, by optimizing its core architecture and admin panel. My [experience](/#work) also spans Node.js, Express, real-time services, and Web3 integrations (Ethereum, Polygon, Solana), and I'm increasingly focused on AI and LLM features in Next.js. Explore my [projects](/#projects) below.",
+		"I'm a full-stack developer with a [background](/#education) in computer science and 4+ years building web applications with React, Next.js, NestJS, and TypeScript. I'm currently building [AllCoin](https://allcoin.braav.co/), a challenge-coin community platform for collectors (forums, collections, and discovery), and delivering full-stack work at Brimer Ventures across both MERN and PostgreSQL-based stacks. Previously I helped scale [CarAdvisers](https://www.caradvisers.com/), an automotive marketplace, by optimizing its core architecture and admin panel. My [experience](/#work) also spans Node.js, Express, real-time services, and Web3 integrations (Ethereum, Polygon, Solana), and I'm increasingly focused on AI and LLM features in Next.js. Explore my [projects](/#projects) below.",
 	avatarUrl: "/me.jpg",
+	resumeUrl:
+		"https://drive.google.com/file/d/1aBCXcrM8xfPOQzgwk5dv-CEN2qB5YFaS/view?usp=sharing",
 
 	skills: [
 		"React",
 		"Next.js",
-		"Javascript",
-		"Typescript",
-		"Tailwind",
-		"Shadcn UI",
-		"Mui",
+		"TypeScript",
+		"JavaScript",
 		"Node.js",
 		"Express",
+		"NestJS",
 		"MongoDB",
+		"PostgreSQL",
+		"Drizzle ORM",
 		"Firebase",
+		"Tailwind",
+		"Shadcn UI",
+		"MUI",
+		"Web3",
+		"AWS",
 		"Socket.io",
 		"Git",
-		"Github Actions",
+		"GitHub Actions",
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
@@ -223,7 +230,7 @@ export const DATA = {
 		{
 			title: "AllCoin",
 			href: "https://allcoin.braav.co/",
-			dates: "2025 - Present",
+			dates: "2026 - Present",
 			active: true,
 			description:
 				"A community platform for challenge-coin enthusiasts to share, discover, and connect — featuring coin catalogs, collector profiles, and discussion and networking tools.",

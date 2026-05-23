@@ -46,6 +46,9 @@ export default function CaseStudyPage({
 					<h1 className="text-3xl font-bold tracking-tighter sm:text-4xl">
 						{cs.title}
 					</h1>
+					<p className="text-sm tabular-nums text-muted-foreground">
+						{cs.dates}
+					</p>
 					<p className="text-muted-foreground">{cs.tagline}</p>
 					<div className="flex flex-wrap gap-1">
 						{cs.stack.map((tag) => (

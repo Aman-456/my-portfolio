@@ -5,16 +5,16 @@ import { Metadata } from 'next'
 import BlurFade from "@/components/magicui/blur-fade";
 
 export const metadata: Metadata = {
-	title: `All Projects - ${DATA.name}`,
-	description: `Showcasing my work and achievements.`,
-	keywords: ["Projects", "All Projects", "Projects List", "Projects Showcase", "Projects Portfolio"],
+	title: "All Projects",
+	description: `Selected projects and case studies by ${DATA.name} — Web3 platforms, marketplaces, and full-stack apps built with Next.js, React, and TypeScript.`,
+	keywords: ["Projects", "Case studies", "Web3", "Full-stack", "Next.js", "React"],
 	openGraph: {
-		title: `All Projects - ${DATA.name}`,
-		description: `Showcasing my work and achievements.`,
+		title: `Projects — ${DATA.name}`,
+		description: `Selected projects and case studies — Web3 platforms, marketplaces, and full-stack apps.`,
 	},
 	twitter: {
-		title: `All Projects - ${DATA.name}`,
-		description: `Showcasing my work and achievements.`,
+		title: `Projects — ${DATA.name}`,
+		description: `Selected projects and case studies — Web3 platforms, marketplaces, and full-stack apps.`,
 	},
 }
 

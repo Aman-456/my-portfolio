@@ -11,26 +11,10 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: `All Projects - ${DATA.name}`,
 		description: `Showcasing my work and achievements.`,
-		images: [
-			{
-				url: DATA.avatarUrl,
-				width: 800,
-				height: 600,
-				alt: `All Projects - ${DATA.name}`,
-			},
-		],
 	},
 	twitter: {
 		title: `All Projects - ${DATA.name}`,
 		description: `Showcasing my work and achievements.`,
-		images: [
-			{
-				url: DATA.avatarUrl,
-				width: 800,
-				height: 600,
-				alt: `All Projects - ${DATA.name}`,
-			},
-		],
 	},
 }
 

@@ -19,7 +19,21 @@ export function generateMetadata({
 }): Metadata {
 	const cs = getCaseStudy(params.slug);
 	if (!cs) return {};
-	return { title: cs.title, description: cs.tagline };
+	return {
+		title: cs.title,
+		description: cs.tagline,
+		openGraph: {
+			title: cs.title,
+			description: cs.tagline,
+			images: cs.image ? [cs.image] : undefined,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: cs.title,
+			description: cs.tagline,
+			images: cs.image ? [cs.image] : undefined,
+		},
+	};
 }
 
 export default function CaseStudyPage({

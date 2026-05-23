@@ -1,2 +1,6 @@
 /.next
 /node_modules
+
+# build artifacts
+*.tsbuildinfo
+pnpm-workspace.yaml

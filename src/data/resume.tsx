@@ -26,6 +26,9 @@ export const TAGS = {
 	FRAMER_MOTION: "Framer Motion",
 	CANVAS: "HTML5 Canvas",
 	CSS: "CSS",
+	NEST: "NestJS",
+	POSTGRES: "PostgreSQL",
+	AWS: "AWS",
 } as const;
 
 export const DATA = {
@@ -101,7 +104,7 @@ export const DATA = {
 			},
 			email: {
 				name: "Send Email",
-				url: "amanu4519@gmail.com",
+				url: "mailto:amanu4519@gmail.com",
 				icon: Icons.email,
 
 				navbar: false,
@@ -111,6 +114,18 @@ export const DATA = {
 
 	work: [
 		{
+			company: "Brimer Ventures LLC",
+			href: "",
+			badges: ["Full Stack Developer", "Onsite"],
+			location: "Islamabad, Pakistan",
+			title: "Full Stack Developer",
+			logoUrl: "/exprience/brimer-ventures.png",
+			start: "Apr 2026",
+			end: "Present",
+			description:
+				"Providing full-stack web development services to Brimer Ventures LLC — building and maintaining scalable web applications with React, Next.js, Node.js, NestJS, Express, MongoDB, and PostgreSQL — across both the MERN stack and SQL-based stacks.",
+		},
+		{
 			company: "Car Advisers",
 			href: "https://caradvisers.com/",
 			badges: ["core team member", "onsite"],
@@ -118,7 +133,7 @@ export const DATA = {
 			title: "Full Stack Developer",
 			logoUrl: "/exprience/caradvisers.png",
 			start: "Dec 2024",
-			end: "Present",
+			end: "Feb 2026",
 			description:
 				"Developed a comprehensive automotive marketplace platform similar to PakWheels with multi-product capabilities. Built features for buying/selling cars, bikes, and auto parts, integrated admin dashboards, inspection systems, auction sheets, and specialized sections for armoured and electric vehicles. Implemented user profiles, dealer profiles, workshop profiles with public/private route management and data encryption for secure transactions.",
 		},
@@ -205,6 +220,30 @@ export const DATA = {
 		},
 	],
 	projects: [
+		{
+			title: "Braav",
+			href: "https://allcoin.braav.co/",
+			dates: "2025 - Present",
+			active: true,
+			description:
+				"A community platform for challenge-coin enthusiasts to share, discover, and connect — featuring coin catalogs, collector profiles, and discussion and networking tools.",
+			technologies: [
+				TAGS.NEXT,
+				TAGS.NEST,
+				TAGS.TYPESCRIPT,
+				TAGS.POSTGRES,
+				TAGS.AWS,
+			],
+			links: [
+				{
+					type: "Website",
+					href: "https://allcoin.braav.co/",
+					icon: <Icons.globe className="size-3" />,
+				},
+			],
+			image: "/projects/braav.png",
+			video: "",
+		},
 		{
 			title: "Car Advisers",
 			href: "https://caradvisers.com/",
@@ -469,69 +508,6 @@ export const DATA = {
 			],
 			image: "/projects/hilink-travel.png",
 			video: "",
-		},
-	],
-	hackathons: [
-		{
-			title: "Hack Western 5",
-			dates: "November 23rd - 25th, 2018",
-			location: "London, Ontario",
-			description:
-				"Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-			image:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-			links: [],
-		},
-
-		{
-			title: "HackDavis",
-			dates: "January 20th - 21st, 2018",
-			location: "Davis, California",
-			description:
-				"Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-			image:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-			win: "Best Data Hack",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-			links: [
-				{
-					title: "Devpost",
-					icon: <Icons.globe className="h-4 w-4" />,
-					href: "https://devpost.com/software/my6footprint",
-				},
-				{
-					title: "ML",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/Wallet6/my6footprint-machine-learning",
-				},
-				{
-					title: "iOS",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/Wallet6/CarbonWallet",
-				},
-				{
-					title: "Server",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/Wallet6/wallet6-server",
-				},
-			],
-		},
-		{
-			title: "ETH Waterloo",
-			dates: "October 13th - 15th, 2017",
-			location: "Waterloo, Ontario",
-			description:
-				"Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-			image:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-			links: [
-				{
-					title: "Organization",
-					icon: <Icons.github className="h-4 w-4" />,
-					href: "https://github.com/ethdocnet",
-				},
-			],
 		},
 	],
 } as const;

@@ -52,6 +52,7 @@ export default function ProjectsClient() {
                         <div className="relative mb-8">
                             <input
                                 type="text"
+                                aria-label="Search projects"
                                 placeholder="Search by title or description..."
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}

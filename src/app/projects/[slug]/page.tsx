@@ -22,6 +22,9 @@ export function generateMetadata({
 	return {
 		title: cs.title,
 		description: cs.tagline,
+		alternates: {
+			canonical: `/projects/${cs.slug}`,
+		},
 		openGraph: {
 			title: cs.title,
 			description: cs.tagline,

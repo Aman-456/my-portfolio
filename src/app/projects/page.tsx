@@ -8,6 +8,9 @@ export const metadata: Metadata = {
 	title: "All Projects",
 	description: `Selected projects and case studies by ${DATA.name} — Web3 platforms, marketplaces, and full-stack apps built with Next.js, React, and TypeScript.`,
 	keywords: ["Projects", "Case studies", "Web3", "Full-stack", "Next.js", "React"],
+	alternates: {
+		canonical: "/projects",
+	},
 	openGraph: {
 		title: `Projects — ${DATA.name}`,
 		description: `Selected projects and case studies — Web3 platforms, marketplaces, and full-stack apps.`,

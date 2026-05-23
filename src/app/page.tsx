@@ -12,8 +12,24 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+	const personJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name: DATA.name,
+		url: DATA.url,
+		jobTitle: "Full-Stack Developer",
+		description: DATA.metaDescription,
+		sameAs: Object.values(DATA.contact.social)
+			.map((s) => s.url)
+			.filter((url) => url.startsWith("http")),
+		knowsAbout: DATA.skills,
+	};
 	return (
 		<main className="flex flex-col min-h-[100dvh] space-y-10 max-w-[715px] mx-auto">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+			/>
 			<section id="hero">
 				<div className="mx-auto w-full space-y-8">
 					<div className="gap-2 flex justify-between">

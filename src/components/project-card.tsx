@@ -38,6 +38,8 @@ export function ProjectCard({
 	className,
 }: Props) {
 	const caseStudy = caseStudySlugForProject(title);
+	const cardHref = caseStudy ? `/projects/${caseStudy}` : href || "#";
+	const isExternal = !caseStudy && Boolean(href);
 	return (
 		<Card
 			className={
@@ -45,7 +47,9 @@ export function ProjectCard({
 			}
 		>
 			<Link
-				href={href || "#"}
+				href={cardHref}
+				target={isExternal ? "_blank" : undefined}
+				rel={isExternal ? "noopener noreferrer" : undefined}
 				className={cn("block cursor-pointer", className)}
 			>
 				{image && (

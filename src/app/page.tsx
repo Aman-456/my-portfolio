@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { ContactForm } from "@/components/contact-form";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
@@ -199,24 +200,27 @@ export default function Page() {
 				</div>
 			</section>
 			<section id="contact" className="">
-				<div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full pt-5 pb-12">
+				<div className="grid items-center justify-center gap-6 px-4 text-center md:px-6 w-full pt-5 pb-12">
 					<BlurFade delay={BLUR_FADE_DELAY * 16}>
 						<div className="space-y-3">
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
 								Get in Touch
 							</h2>
 							<p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-								Want to chat? I&apos;m open to full-stack roles and
-								freelance work — just send me a{" "}
+								I&apos;m open to full-stack roles and freelance work. Drop me
+								a message below, or reach me{" "}
 								<Link
 									href={DATA.contact.social.email.url}
 									className="text-blue-500 hover:underline"
 								>
-									direct message
-								</Link>{" "}
-								and I&apos;ll get back to you as soon as I can.
+									directly
+								</Link>
+								.
 							</p>
 						</div>
+					</BlurFade>
+					<BlurFade delay={BLUR_FADE_DELAY * 17}>
+						<ContactForm />
 					</BlurFade>
 				</div>
 			</section>

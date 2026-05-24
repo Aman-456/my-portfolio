@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import BlurFade from "@/components/magicui/blur-fade";
 import { Badge } from "@/components/ui/badge";
 import { CASE_STUDIES, getCaseStudy } from "@/data/case-studies";
+import { DATA } from "@/data/resume";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -47,8 +48,51 @@ export default function CaseStudyPage({
 	const cs = getCaseStudy(params.slug);
 	if (!cs) notFound();
 
+	const base = DATA.url.replace(/\/$/, "");
+	const url = `${base}/projects/${cs.slug}`;
+	const years = (cs.dates.match(/\d{4}/g) ?? []).map(Number);
+	const datePublished = years.length
+		? `${Math.min(...years)}-01-01`
+		: undefined;
+
+	const articleJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "Article",
+		headline: cs.title,
+		description: cs.tagline,
+		...(cs.image ? { image: `${base}${cs.image}` } : {}),
+		...(datePublished ? { datePublished } : {}),
+		author: { "@type": "Person", name: DATA.name, url: base },
+		url,
+		mainEntityOfPage: url,
+		keywords: cs.stack.join(", "),
+	};
+
+	const breadcrumbJsonLd = {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: [
+			{ "@type": "ListItem", position: 1, name: "Home", item: base },
+			{
+				"@type": "ListItem",
+				position: 2,
+				name: "Projects",
+				item: `${base}/projects`,
+			},
+			{ "@type": "ListItem", position: 3, name: cs.title, item: url },
+		],
+	};
+
 	return (
 		<main className="flex flex-col min-h-[100dvh] space-y-10 max-w-[715px] mx-auto">
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+			/>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+			/>
 			<BlurFade delay={BLUR_FADE_DELAY}>
 				<Link
 					href="/projects"

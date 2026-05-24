@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon, FolderGit2, Search } from "lucide-react";
+import { HomeIcon, NotebookIcon, FolderGit2 } from "lucide-react";
 
 export const TAGS = {
 	REACT: "React",
@@ -43,8 +43,7 @@ export const DATA = {
 	summary:
 		"I'm a full-stack developer with a [background](/#education) in computer science and 4+ years building web applications with React, Next.js, NestJS, and TypeScript. I'm currently building [AllCoin](https://allcoin.braav.co/), a challenge-coin community platform for collectors (forums, collections, and discovery), and delivering full-stack work at Brimer Ventures across both MERN and PostgreSQL-based stacks. Previously I helped scale [CarAdvisers](https://www.caradvisers.com/), an automotive marketplace, by optimizing its core architecture and admin panel. My [experience](/#work) also spans Node.js, Express, real-time services, and Web3 integrations (Ethereum, Polygon, Solana), and I'm increasingly focused on AI and LLM features in Next.js. Explore my [projects](/#projects) below.",
 	avatarUrl: "/me.jpg",
-	resumeUrl:
-		"https://drive.google.com/file/d/1aBCXcrM8xfPOQzgwk5dv-CEN2qB5YFaS/view?usp=sharing",
+	resumeUrl: "/Aman_Ullah_CV.pdf",
 
 	skills: [
 		"React",

@@ -33,6 +33,20 @@ export default function Page() {
 			/>
 			<section id="hero">
 				<div className="mx-auto w-full space-y-8">
+					{DATA.availability.open && (
+						<BlurFade delay={BLUR_FADE_DELAY}>
+							<a
+								href="#contact"
+								className="inline-flex w-fit items-center gap-2 rounded-full border bg-muted/40 px-3 py-1 text-xs font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+							>
+								<span className="relative flex h-2 w-2">
+									<span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+									<span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+								</span>
+								{DATA.availability.label}
+							</a>
+						</BlurFade>
+					)}
 					<div className="gap-2 flex justify-between">
 						<div className="flex-col flex flex-1 space-y-1.5">
 							<h1>

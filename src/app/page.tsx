@@ -223,7 +223,7 @@ export default function Page() {
 								a message below, or reach me{" "}
 								<Link
 									href={DATA.contact.social.email.url}
-									className="text-blue-500 hover:underline"
+									className="text-blue-600 underline underline-offset-2 dark:text-blue-400"
 								>
 									directly
 								</Link>

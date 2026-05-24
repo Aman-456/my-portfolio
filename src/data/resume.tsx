@@ -68,9 +68,14 @@ export const DATA = {
 		"GitHub Actions",
 	],
 	navbar: [
-		{ href: "/", icon: HomeIcon, label: "Home" },
-		{ href: "/projects", icon: FolderGit2, label: "Projects" },
-		// { href: "/blog", icon: NotebookIcon, label: "Blog" },
+		{ href: "/", icon: HomeIcon, label: "Home", external: false },
+		{ href: "/projects", icon: FolderGit2, label: "Projects", external: false },
+		{
+			href: "https://the-daily-thoughts.vercel.app",
+			icon: NotebookIcon,
+			label: "Blog",
+			external: true,
+		},
 	],
 	contact: {
 		email: "amanu4519@gmail.com",

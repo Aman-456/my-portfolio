@@ -4,3 +4,8 @@
 # build artifacts
 *.tsbuildinfo
 pnpm-workspace.yaml
+
+# env (never commit secrets)
+.env
+.env.local
+.env*.local
